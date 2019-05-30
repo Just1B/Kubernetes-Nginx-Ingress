@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: fruits-ingress
+  namespace: fruits
+spec:
+  rules:
+    - host: sub1.example.com
+      http:
+        paths:
+          - backend:
+              serviceName: apple-service
+              servicePort: 5678
+            path: /
+
+    - host: sub2.example.com
+      http:
+        paths:
+          - backend:
+              serviceName: banana-service
+              servicePort: 5678
+            path: /
