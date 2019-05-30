@@ -2,7 +2,7 @@
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-go.svg)](https://forthebadge.com)
 
-We will deploy 2 pods an dispach traffic with the NGINX Ingress Controller for Kubernetes
+We will deploy 2 pods and dispach traffic with the NGINX Ingress Controller for Kubernetes
 
 Requirements
 
