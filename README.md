@@ -25,7 +25,7 @@ helm init --service-account tiller --upgrade
 
 In Kubernetes, an Ingress is an object that allows access to your Kubernetes services from outside the Kubernetes cluster. You configure access by creating a collection of rules that define which inbound connections reach which services.
 
-![index](https://github.com/Just1B/Kubernetes_Nginx_Ingress/raw/master/screen/ingress.png)
+![index](https://github.com/Just1B/Kubernetes_Nginx_Ingress/raw/master/screens/ingress.png)
 
 ```
 helm install stable/nginx-ingress --name nginx-ingress --namespace nginx-ingress --set rbac.create=true
