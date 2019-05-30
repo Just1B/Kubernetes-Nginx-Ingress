@@ -23,7 +23,7 @@ helm init --service-account tiller --upgrade
 
 ## Step 2 : Install Nginx Ingress with Helm
 
-In Kubernetes, an Ingress is an object that allows access to your Kubernetes services from outside the Kubernetes cluster. You configure access by creating a collection of rules that define which inbound connections reach which services.
+In Kubernetes, Ingress is an object that allows access to your Kubernetes services from outside the Kubernetes cluster. You configure access by creating a collection of rules that defines which inbound connections reach which services.
 
 ![index](https://github.com/Just1B/Kubernetes_Nginx_Ingress/raw/master/screens/ingress.png)
 
@@ -37,9 +37,9 @@ Next we will need the Ingress `EXTERNAL-IP`
 kubectl --namespace nginx-ingress get services
 ```
 
-Now you can point 2 subdomains ( TYPE A ) on the `EXTERNAL-IP``
+Now you can point 2 subdomains ( TYPE A ) on the `EXTERNAL-IP`
 
-Propagation can be long so wait for it :s
+Propagation can be long so wait for it 😴
 
 ## Step 3 : Deploy 2 Differents services
 
