@@ -14,7 +14,7 @@ Requirements
 Helm is the package manager for Kubernetes and the best way to find, share, and use software built for Kubernetes.
 
 ```
-kubectl apply - f rbac-config.yaml
+kubectl apply -f rbac-config.yaml
 ```
 
 ```
