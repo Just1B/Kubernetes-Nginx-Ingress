@@ -28,7 +28,7 @@ In Kubernetes, Ingress is an object that allows access to your Kubernetes servic
 ![index](https://github.com/Just1B/Kubernetes_Nginx_Ingress/raw/master/screens/ingress.png)
 
 ```
-helm install stable/nginx-ingress --name nginx-ingress --namespace nginx-ingress --set rbac.create=true
+helm install stable/nginx-ingress --name nginx-ingress --namespace nginx-ingress --set rbac.create=true --set controller.service.externalTrafficPolicy=Local
 ```
 
 Next we will need the Ingress `EXTERNAL-IP`
